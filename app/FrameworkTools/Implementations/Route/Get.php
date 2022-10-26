@@ -4,6 +4,7 @@ namespace App\FrameworkTools\Implementations\Route;
 
 use App\Controllers\HelloWorldController;
 use App\Controllers\TrainQueryController;
+use App\Controllers\GuilhermeController;
 
 trait Get {
     
@@ -16,6 +17,9 @@ trait Get {
 
             case '/train-query':
                 return (new TrainQueryController)->execute();
+            break;
+            case '/germano1':
+                return (new GuilhermeController)->germano1();
             break;
         }
     }
